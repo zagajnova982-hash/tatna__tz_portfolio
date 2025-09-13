@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html lang="ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Маркетплейс‑дизайнер — Имя Фамилия | Карточки, инфографика, rich/A+&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Маркетплейс‑дизайнер. Упаковываю карточки и rich/A+ для WB и Ozon. 200+ SKU, рост конверсии до +12–25%. Full‑time remote." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- OpenGraph --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:title" content="Имя Фамилия — Маркетплейс‑дизайнер" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:description" content="Карточки, инфографика и rich/A+ для WB/Ozon. 200+ SKU, рост конверсии +12–25%." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:type" content="website" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:image" content="img/og-cover.jpg" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:url" content="https://your-domain.com" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="icon" href="img/favicon.png" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg:#ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--fg:#0f1222;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--muted:#6b7280;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--brand:#6C63FF; /* поменяй на свой акцент */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--brand-2:#FF5A7A;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card:#f7f7fb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--max:1100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius:14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>img{max-width:100%;display:block}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a{color:var(--brand);text-decoration:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a:hover{text-decoration:underline}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container{max-width:var(--max);margin:0 auto;padding:0 20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(12px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom:1px solid #ececf3; z-index:20</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav .left{display:flex;align-items:center;gap:14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand{font-weight:700}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.links{display:flex;gap:18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.links a{color:var(--fg)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta{display:flex;gap:10px;flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid #e7e7ef;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:#fff;color:var(--fg);font-weight:600</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.ghost{background:transparent}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Hero */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero{padding:48px 0 18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1{font-size:36px;line-height:1.15;margin:0 0 12px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.subtitle{color:var(--muted);font-size:18px;margin-bottom:18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chip{background:var(--card);border:1px solid #ececf3;color:#333;padding:6px 10px;border-radius:999px;font-size:14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero .note{color:var(--muted);font-size:14px;margin-top:8px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero .photo{border-radius:16px;overflow:hidden;border:1px solid #ececf3}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Sections */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>section{padding:36px 0}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sec-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sec-head h2{margin:0;font-size:26px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width:960px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width:640px){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>h1{font-size:28px}.grid{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.links{display:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Case Card */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card{background:#fff;border:1px solid #ececf3;border-radius:var(--radius);overflow:hidden}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card .pad{padding:12px 14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-top:6px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.bullets{margin:8px 0 0;padding-left:18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.bullets li{margin:6px 0}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag{font-size:12px;background:#eef2ff;color:#3730a3;border:1px solid #dbe3ff;border-radius:6px;padding:3px 6px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Before-After slider */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ba{position:relative;aspect-ratio:4/3;background:#f3f3f8;overflow:hidden}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ba .after{clip-path:inset(0 0 0 50%)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;border-left:1px solid #0002;border-right:1px solid #0002}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ba .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid #0002;box-shadow:0 2px 8px rgba(0,0,0,.12)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ba input[type=range]{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:ew-resize}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Video grid */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.video{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid #ececf3;background:#000}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.video video{display:block;width:100%;height:auto}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.video .vmeta{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.5);color:#fff;padding:6px 8px;border-radius:8px;font-size:12px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Process, testimonials */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step{background:#fff;border:1px solid #ececf3;border-radius:var(--radius);padding:14px;font-size:15px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media(max-width:960px){.steps{grid-template-columns:1fr 1fr}}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media(max-width:640px){.steps{grid-template-columns:1fr}}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>blockquote{margin:0;padding:14px;border-left:4px solid var(--brand);background:#fafafe;border:1px solid #ececf3;border-radius:8px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Footer */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer{padding:24px 0;border-top:1px solid #ececf3;color:var(--muted);font-size:14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact{display:flex;flex-wrap:wrap;gap:10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact a{color:#fff;text-decoration:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact .btn{background:var(--fg);color:#fff;border-color:var(--fg)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sticky-cta{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:fixed;right:16px;bottom:16px;z-index:50;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex;gap:8px;flex-direction:column</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sticky-cta .btn{box-shadow:0 8px 24px rgba(0,0,0,.15)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo"&gt;D&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="brand"&gt;Имя Фамилия&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="font-size:12px;color:var(--muted)"&gt;Маркетплейс‑дизайнер • Full‑time remote&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav class="links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#cases"&gt;Кейсы&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#video"&gt;Видео&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#process"&gt;Процесс&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about"&gt;О себе&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#contacts"&gt;Контакты&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Замените ссылки на свои PDF --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="btn" href="files/cases.pdf" target="_blank" rel="noopener"&gt;Скачать 6 кейсов (PDF)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="btn primary" href="files/resume.pdf" target="_blank" rel="noopener"&gt;Резюме (PDF)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container hero-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Маркетплейс‑дизайнер: карточки, инфографика и rich/A+ для WB и Ozon&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="subtitle"&gt;200+ SKU. Рост конверсии карточек до +12–25%. Скорость — до 5 SKU/день. Готова к тесту до 1 часа.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="chips"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="chip"&gt;Инфографика&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="chip"&gt;Ретушь/фото&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="chip"&gt;Rich/A+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="chip"&gt;Short‑form видео&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="chip"&gt;PS • Figma • LR • PR/AE&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn primary" href="#cases"&gt;Смотреть кейсы&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="#video"&gt;Видео&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn ghost" href="#contacts"&gt;Связаться&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="note"&gt;Ищу full‑time remote. МСК+4/+5 (ЮВА), окна связи: 9:00–13:00 МСК.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="photo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Замените на своё фото или коллаж кейсов --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="img/hero.webp" alt="Портрет и примеры работ" loading="eager" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="cases"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sec-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Кейсы: до/после и результаты&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn" href="files/cases.pdf" target="_blank"&gt;PDF 6 кейсов&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- КЕЙС 1. Замените изображения before/after --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="ba" data-default="50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;img src="img/case1-before.webp" alt="До — карточка до улучшений" class="before" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;img src="img/case1-after.webp" alt="После — карточка после улучшений" class="after" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="handle" aria-hidden="true"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="knob" aria-hidden="true"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="range" min="0" max="100" value="50" aria-label="Сравнение до и после" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;strong&gt;Категория:&lt;/strong&gt; Pet • &lt;span class="tag"&gt;WB&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="bullets"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Задача: поднять конверсию в нише ошейники.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Решение: 1 мысль = 1 слайд, УТП, унификация иконок, ретушь шума.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Результат: конверсия +14% (2 недели), CTR превью +9%.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="meta"&gt;&lt;span&gt;Роль: инфографика, ретушь&lt;/span&gt;&lt;span&gt;PS • Figma • LR&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- КЕЙС 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="ba" data-default="60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;img src="img/case2-before.webp" alt="До" class="before" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;img src="img/case2-after.webp" alt="После" class="after" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="handle"&gt;&lt;/div&gt;&lt;div class="knob"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="range" min="0" max="100" value="60" aria-label="Сравнение до и после" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;strong&gt;Категория:&lt;/strong&gt; Beauty • &lt;span class="tag"&gt;Ozon&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="bullets"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Задача: визуально выделить УТП и состав.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Решение: сетка 8‑pt, контраст, типографика 28/16, чистые mockups.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Результат: время просмотра карточки +11%.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="meta"&gt;&lt;span&gt;Роль: инфографика&lt;/span&gt;&lt;span&gt;PS • Figma&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- КЕЙС 3 (без слайдера, статично) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="img/case3-cover.webp" alt="Rich/A+ лендинг" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;strong&gt;Rich/A+:&lt;/strong&gt; лонгрид под бренд • &lt;span class="tag"&gt;WB A+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="bullets"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Структура: сюжет от боли → решения → соц.доказательства.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Соблюдение бренд‑гайда, мобильная читаемость.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Итог: рост CR карточки +9% после внедрения A+.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="meta"&gt;&lt;span&gt;Роль: дизайн/верстка&lt;/span&gt;&lt;span&gt;Figma&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- КЕЙС 4–6: добавь свои обложки и буллеты --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="img/case4-cover.webp" alt="Инфографика — электроника" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;strong&gt;Категория:&lt;/strong&gt; Электроника • &lt;span class="tag"&gt;Ozon&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="bullets"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Упростила сложные характеристики и схемы.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Единый стиль иконок, сравнение с конкурентами.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Снижение возвратов по «ожидание/реальность».&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="meta"&gt;&lt;span&gt;Роль: инфографика&lt;/span&gt;&lt;span&gt;PS • Figma&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="img/case5-cover.webp" alt="Инфографика — fashion" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;strong&gt;Категория:&lt;/strong&gt; Fashion • &lt;span class="tag"&gt;WB&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="bullets"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Размерная сетка, фактуры, уход, комплектация.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Фокус на мобильной читаемости.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Пакет 5 SKU за 7 дней.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="meta"&gt;&lt;span&gt;Роль: фото/ретушь/инфографика&lt;/span&gt;&lt;span&gt;LR • PS&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="img/case6-cover.webp" alt="Инфографика — товары для дома" loading="lazy" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="pad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;strong&gt;Категория:&lt;/strong&gt; Дом/кухня • &lt;span class="tag"&gt;Ozon&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="bullets"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;1 слайд = 1 мысль, минимум текста.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;УТП и визуальная иерархия.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Сборка библиотеки шаблонов.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="meta"&gt;&lt;span&gt;Роль: инфографика&lt;/span&gt;&lt;span&gt;PS • Figma&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sec-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Short‑form видео (15–30 сек)&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn" href="#" target="_blank"&gt;Плейлист&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Замените src постеров и файлов видео --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;video preload="metadata" controls playsinline muted poster="img/vid1-poster.webp"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;source src="video/vid1.mp4" type="video/mp4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="vmeta"&gt;Reels/Ads • 20 сек • субтитры/CTA&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;video preload="metadata" controls playsinline muted poster="img/vid2-poster.webp"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;source src="video/vid2.mp4" type="video/mp4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="vmeta"&gt;UGC • 15 сек • оффер в 1‑й секунде&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;video preload="metadata" controls playsinline muted poster="img/vid3-poster.webp"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;source src="video/vid3.mp4" type="video/mp4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="vmeta"&gt;Карточки — видео • 12 сек&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;video preload="metadata" controls playsinline muted poster="img/vid4-poster.webp"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;source src="video/vid4.mp4" type="video/mp4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="vmeta"&gt;Ads • 30 сек • динамичный монтаж&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;video preload="metadata" controls playsinline muted poster="img/vid5-poster.webp"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;source src="video/vid5.mp4" type="video/mp4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="vmeta"&gt;UGC • 18 сек • проблемы/решение&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="video"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;video preload="metadata" controls playsinline muted poster="img/vid6-poster.webp"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;source src="video/vid6.mp4" type="video/mp4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="vmeta"&gt;Reels • 22 сек • текстовые акценты&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="process"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sec-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Как я работаю&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="steps"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step"&gt;&lt;strong&gt;1. Бриф (10–15 мин)&lt;/strong&gt;&lt;br/&gt;Цели, УТП, ограничения площадки, ассеты.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step"&gt;&lt;strong&gt;2. Анализ конкурентов&lt;/strong&gt;&lt;br/&gt;10 карточек в категории, находки → структура.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step"&gt;&lt;strong&gt;3. Прототип 1–2 слайда&lt;/strong&gt;&lt;br/&gt;Проверяю иерархию и читаемость на мобиле.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step"&gt;&lt;strong&gt;4. Продакшн&lt;/strong&gt;&lt;br/&gt;Ретушь, инфографика, иконки, rich/A+.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step"&gt;&lt;strong&gt;5. QA и экспорт&lt;/strong&gt;&lt;br/&gt;Проверка на 320–375 px, экспорт под WB/Ozon.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step"&gt;&lt;strong&gt;6. Итоги&lt;/strong&gt;&lt;br/&gt;Собираю метрики: CTR/CR, замечания категории.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sec-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;О себе&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card" style="padding:14px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Привет! Я Имя Фамилия&lt;/strong&gt; — дизайнер для e‑commerce и маркетплейсов. 3+ года в нише, 200+ SKU, опыт фото/ретуши и короткого видео. Люблю аккуратную типографику, читаемые УТП и быстрые итерации.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Стек:&lt;/strong&gt; Photoshop, Lightroom, Figma, Premiere/DaVinci, After Effects. &lt;strong&gt;Формат:&lt;/strong&gt; full‑time remote, МСК+4/+5. &lt;strong&gt;Ниши:&lt;/strong&gt; beauty, дом/кухня, электроника, fashion, pet.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Документы/оформление:&lt;/strong&gt; возможна занятость по ТК РФ/ГПХ/самозанятость (фикс ежемесячно), при необходимости — работа из‑за рубежа с окнами связи.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="testimonials"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sec-head"&gt;&lt;h2&gt;Отзывы и бренды&lt;/h2&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>«Оперативно собрала пакет на 5 SKU, снизили количество правок у категории. Конверсия выросла на +14%.»</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;br/&gt;&lt;small&gt;Руководитель e‑com, категория Pet&lt;/small&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>«Качественные rich‑лендинги и читаемая инфографика. Быстрый цикл согласования.»</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;br/&gt;&lt;small&gt;Маркетолог бренда Beauty&lt;/small&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>«Короткие видео в продакшн за 48 часов. Бережно к бренд‑гайду.»</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;br/&gt;&lt;small&gt;Проджект менеджер, агентство&lt;/small&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contacts"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sec-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Контакты&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card" style="padding:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;strong&gt;Готова обсудить роль в штате (удалённо)&lt;/strong&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div style="color:var(--muted)"&gt;Почта и Telegram — самый быстрый способ связи&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Замените на свои контакты --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="mailto:you@example.com"&gt;you@example.com&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="https://t.me/yourhandle" target="_blank" rel="noopener"&gt;@yourhandle&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="https://cal.com/yourname/intro" target="_blank" rel="noopener"&gt;Назначить звонок&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sticky-cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="btn primary" href="files/resume.pdf" target="_blank"&gt;Резюме (PDF)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="btn" href="files/cases.pdf" target="_blank"&gt;Кейсы (PDF)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>© &lt;span id="year"&gt;&lt;/span&gt; Имя Фамилия • Маркетплейс‑дизайнер • Доступность: 9:00–13:00 МСК • Email: you@example.com</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Год в футере</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('year').textContent = new Date().getFullYear();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Before/After sliders</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.ba').forEach(function(ba){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const before = ba.querySelector('.before');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const after = ba.querySelector('.after');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const handle = ba.querySelector('.handle');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const knob = ba.querySelector('.knob');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const range = ba.querySelector('input[type=range]');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>function setSplit(pct){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const clamped = Math.max(0, Math.min(100, pct));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>after.style.clipPath = `inset(0 0 0 ${clamped}%)`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>handle.style.left = `${clamped}%`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>knob.style.left = `${clamped}%`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// начальное значение</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const init = parseInt(ba.getAttribute('data-default') || '50', 10);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setSplit(init);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>range.addEventListener('input', e =&gt; setSplit(e.target.value));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// мышь/тач по области</p>
+<p class="p1"><span class="Apple-converted-space">      </span>function updateFromEvent(e){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const rect = ba.getBoundingClientRect();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setSplit( (x / rect.width) * 100 );</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ba.addEventListener('pointerdown', e =&gt; { ba.setPointerCapture(e.pointerId); updateFromEvent(e) });</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ba.addEventListener('pointermove', e =&gt; { if (e.pressure&gt;0 || e.buttons) updateFromEvent(e) });</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ba.addEventListener('pointerup', e =&gt; { /* noop */ });</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Плавный скролл для якорей (простая версия)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('a[href^="#"]').forEach(a=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>a.addEventListener('click', e=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const id=a.getAttribute('href').substring(1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const el=document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}) }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
